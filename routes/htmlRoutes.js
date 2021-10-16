@@ -1,5 +1,6 @@
 const path = require("path");
 const router = require("express").Router();
+const PORT = process.env.port || 3001;
 
 // "/notes" responds with the notes.html file
 router.get("/notes", (req, res) => {
