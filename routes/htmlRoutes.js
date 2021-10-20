@@ -1,6 +1,5 @@
 const path = require("path");
 const router = require("express").Router();
-const PORT = process.env.port || 3001;
 
 router.get("/", (req, res) =>
     res.sendFile(path.join(__dirname, "../public/index.html"))
